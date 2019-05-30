@@ -1,0 +1,111 @@
+<!-- first I've specified the type of documentt this is which is html -->
+<!DOCTYPE html>
+
+<!-- I've specified that the html will be written in US english -->
+<html lang="en-us">
+
+<!-- in the "head" reference I've specified that I will be using the character set UTF-8,
+I've set the viewport which will scale the page to the width of the device viewing it,
+I've identified myself as the author for meta descriptors and I've linked the css stylesheet I'll be using. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="Miguel Villarreal">
+    <title>Miguel Villarreal Curriculum Vitae</title>
+
+    <link rel="stylesheet" type="text/CSS" href="assets/css/style.css">
+
+</head>
+<!-- In the body tag I've created the divisions that will make up the webpage. The first division should contain my name as the header -->
+
+<body>
+
+    <!-- here will be the division that will control the top page elements -->
+    <div class="topPage">
+        <section>
+            <header>
+                <h1>Miguel Villarreal</h1>
+            </header>
+
+            <section class="links">
+                <a href="index.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Me</a>
+            </section>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <!-- The next section will contain a division that includes my picture, the bio-paragraphs, and the "About Me" header -->
+        <div class="aboutMeBox">
+            <!-- I'm creating a separate section tag that should allow me to create a different box for the h2, than the p boxes -->
+            <section id="aboutHeader">
+                <h2>About Me</h2>
+            </section>
+
+
+            <section class="bioPhotoAndText">
+                <img id="myPersonalPicture" src="../Portfolio/assets/images/IMG_2626.jpg"
+                    alt="Miguel Villarreal Headshot" height="200" width="175">
+
+                <p id="bioParagraph">
+                    Born in Armenia, Colombia in 1992 I have been in the United States since 2002.
+                    In the time since arriving to the United States, I attended Clay High School from 2008 to 2011.
+                    After graduating with honors, I was accepted into, and attended, the University of Central Florida.
+                    At the University of Central Florida I majored in biomedical sciences and graduated in the summer of
+                    2016.
+                    From that point onward, I worked as a Medical Assistant for three years before choosing to pursue a
+                    career in technology.
+                    Now I am attending the University of Central Florida Web Developer Coding Bootcamp in the hope of
+                    beginning a new, and successful, journey.
+
+                    <br>
+                    <br>
+
+                    In my own time I love to read, play tennis, and explore Orlando with my girlfriend.
+                    I have an eight month old mixed puppy that is as beautiful as she is sweet.
+                    Owning a dog has been a challenge but one that has come with its own rewards.
+                    Recently, my girlfriend and I became Disney Annual Pass holders.
+                    I was skeptical of buying an annual pass at first but have come to love the relaxing aspect of going
+                    whenever we want.
+                    Life is changing fast and adapting to the shifting times has me looking forward to the future.
+                </p>
+            </section>
+            <!-- In this section I will need to create a box that will float left but will also have to include overflow so that it sits flush against the background -->
+            <!-- <section id="myPersonalPicture">
+                    <img src="../Portfolio/assets/images/IMG_2626.jpg" alt="Miguel Villarreal Headshot" height="200" width="175">
+            </section>
+            <section id="bioParagraph">
+                <p>
+                    Born in Armenia, Colombia in 1992 I have been in the United States since 2002.
+                    In the time since arriving to the United States, I attended Clay High School from 2008 to 2011.
+                    After graduating with honors, I was accepted into, and attended, the University of Central Florida.
+                    At the University of Central Florida I majored in biomedical sciences and graduated in the summer of
+                    2016.
+                    From that point onward, I worked as a Medical Assistant for three years before choosing to pursue a
+                    career in technology.
+                    Now I am attending the University of Central Florida Web Developer Coding Bootcamp in the hope of
+                    beginning a new, and successful, journey.
+                </p>
+                <p>
+                    In my own time I love to read, play tennis, and explore Orlando with my girlfriend.
+                    I have an eight month old mixed puppy that is as beautiful as she is sweet.
+                    Owning a dog has been a challenge but one that has come with its own rewards.
+                    Recently, my girlfriend and I became Disney Annual Pass holders.
+                    I was skeptical of buying an annual pass at first but have come to love the relaxing aspect of going
+                    whenever we want.
+                    Life is changing fast and adapting to the shifting times has me looking forward to the future.
+                </p>
+            </section> -->
+        </div>
+    </div>
+
+    <div class="bottomPage">
+        <footer>
+            Copyright 2019, design and development by M.E. Villarreal
+        </footer>
+    </div>
+</body>
+
+</html>

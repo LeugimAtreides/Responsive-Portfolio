@@ -1,0 +1,567 @@
+
+/* CSS for all pages */
+    /* discovered that setting the html height allows the content to use the entirety of the webpage */
+    html {
+        height: 100%;
+    }
+    body {
+        block-size: auto;
+        background-image: url(../images/interlaced-background-pattern.png);
+        background-attachment: scroll;
+        width: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        min-height: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        block-size: auto;
+        text-align: center;
+        font-size: 26px;
+        background-color: rgb(74, 170, 165);
+        width: 223px;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        bottom: 0;
+        left: 471px;
+        color: white;
+        height: 81px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    header {
+        /* overflow: auto;
+        width: 100%;
+        border-bottom: 5px solid rgb(74, 170, 165);
+        position: relative;
+        box-sizing: border-box; 
+        
+        removed for being absolutely unecessary*/
+    }
+
+    a {
+        margin: 5px;
+        padding: 5px;
+        border-right: 2px solid gainsboro;
+        text-emphasis: none;
+    }
+
+    .wrapper {
+        block-size: auto;
+        width: 960px;
+        position: relative;
+        margin: auto;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+    .topPage {
+        background-color: white;
+        overflow: auto;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 5px solid rgb(74, 170, 165);
+        height: 86px;
+    }
+/* changed CSS styling on the footer (put position: absolute, and width 100%) in order to have it fill the entirety of the bottom part of the page */
+    .bottomPage {
+        block-size: auto;
+        background: darkgrey;
+        overflow: auto;
+        /* padding: 23px; */
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        font-size: smaller;
+        opacity: 1;
+        text-align: center;
+        clear: both;
+        height: 105px;
+        border-top: rgb(74, 170, 165) solid 5px;
+        margin: 0;
+        padding: 42px;
+    }
+    
+
+    .links {
+        float: left;
+        position: relative;
+        bottom: -6px;
+        right: -966px;
+        font-size: smaller;
+        }
+
+/* Decoration of links */
+    a:link {
+    text-decoration: none;
+    text-decoration-color: darkgray
+    }
+    
+    a:visited {
+    text-decoration: none;
+    color: darkgray;
+    }
+    
+    a:hover {
+    text-decoration: rgb(74, 170, 165);
+    }
+    
+    a:active {
+    text-decoration: solid steelblue;
+    }
+
+    
+
+/* This part of the CSS will dictate how the content of the about me page should behave */
+
+/* CSS for the About Me page */
+    /* changed the about me box to have more height */
+
+    .aboutMeBox {
+        background-color: white;
+        padding-bottom: 0px;
+        border: solid lightgrey thin;
+        position: relative;
+        top: 109px;
+        left: -10px;
+        width: 960px;
+        height: fit-content;
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 12px;
+    }
+    
+/* the header needs to have a width that is less than the parent element, additionally it will need to be floated left */
+/* and then cleared in order to avoid collapsing */
+    #aboutHeader {
+        background-color: white;
+        padding-bottom: 0px;
+        border-bottom: 2px solid lightgrey;
+        position: relative;
+        top: 0px;
+        left: 51px;
+        float: left;
+        box-sizing: border-box;
+        clear: right;
+        width: 90%;
+        font-size: 20px;
+        color: rgb(74, 170, 165);
+    }
+
+    .bioPhotoAndText {
+        /* line-height: 16px; */
+        padding: 40px;
+        position: relative;
+        float: left;
+        /* overflow: overlay; */
+        top: -49px;
+        left: 12px;
+        letter-spacing: 1px;
+    }
+
+    #bioParagraph {
+        padding: 10px;
+        margin: -13px;
+        position: relative;
+        top: 26px;
+        left: -2px;
+        line-height: 21px;
+        height: fit-content;
+    }
+
+    #myPersonalPicture {
+        float: left;
+        position: relative;
+        padding: 6px;
+        top: 24px;
+        left: -11px;
+    }
+
+/* this next part of the CSS will contain the styling elements for the portfolio gallery */
+
+/* unfortunately I was unable to finish the gallery part of the homework as, but I was planning to use the CSS flow concept in order to organize the gallery photos in a stylish manner */
+.gallery    {
+
+}
+
+
+/* this next part of the CSS will contain the styling elements for the Contact page */
+    
+    /* the form CSS was taken from w3school it adds css styling to each element and adds a hover pseudo-class. It also creates an easy to float and position box that resizes appropriately */
+form {
+    float: left;
+    padding: 54px;
+    width: 946px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px rgb(74, 170, 165);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=textarea] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px rgb(74, 170, 165);
+    border-radius: 4px;
+    height: 30px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(74, 170, 165);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
+}
+
+/* CSS Media Queries */
+
+
+/* My strategy here has been to use the google inspector and look at the responsive sizes menu  */
+
+
+/* Resizing for Iphone X screens */
+
+@media screen and (max-width: 375px) {
+
+    .wrapper {
+        width: 375px;
+        position: relative;
+        margin: auto;
+        height: 582px;
+        box-sizing: border-box;
+    }
+    .aboutMeBox {
+        background-color: white;
+        padding-bottom: 0px;
+        border: solid lightgrey thin;
+        position: relative;
+        top: 3vh;
+        left: 0vh;
+        margin: auto;
+        height: 63vh;
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 12px;
+        width: 375px;
+        font-size: 1vh;
+        text-align: center;
+    }
+
+    .links {
+        float: left;
+        position: relative;
+        bottom: -6px;
+        right: -63px;
+        font-size: smaller;
+    }
+
+    .bottomPage {
+            
+        background: darkgrey;
+        overflow: auto;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 1px;
+        width: 375px;
+        font-size: smaller;
+        opacity: 1;
+        text-align: center;
+        clear: both;
+        height: 105px;
+        border-top: rgb(74, 170, 165) solid 5px;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .topPage {
+        background-color: white;
+        overflow: auto;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 5px solid rgb(74, 170, 165);
+        height: 124px;
+        width: 375px;
+}
+
+    h1 {    
+        text-align: center;
+        font-size: 4vh;
+        background-color: rgb(74, 170, 165);
+        width: 225px;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        bottom: 0px;
+        left: 77px;
+        color: white;
+        height: 92px;
+        margin: 0;
+        padding-top: 13px;
+    }
+    
+    #aboutHeader {
+        background-color: white;
+        padding-bottom: 0px;
+        border-bottom: 2px solid lightgrey;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        float: left;
+        box-sizing: border-box;
+        clear: right;
+        width: 352px;
+        font-size: 20px;
+        color: rgb(74, 170, 165);
+    }
+
+    .bioPhotoAndText {
+        line-height: 12px;
+        padding: 34px;
+        position: relative;
+        float: left;
+        /* overflow: overlay; */
+        top: -49px;
+        left: -9px;
+        letter-spacing: 1px;
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 414px) and (min-width: 376px) {
+
+    .wrapper {
+
+        width: 414px;
+        position: relative;
+        margin: auto;
+        height: 610px;
+        box-sizing: border-box;
+    }
+    .aboutMeBox {
+
+        background-color: white;
+        padding-bottom: 0px;
+        border: solid lightgrey thin;
+        position: relative;
+        top: 3vh;
+        left: 0vh;
+        margin: auto;
+        height: 63vh;
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 12px;
+        width: 414px;
+        font-size: 1.5vh;
+        text-align: center;
+    }
+
+    .links {
+
+        float: left;
+        position: relative;
+        bottom: -6px;
+        right: -82px;
+        font-size: smaller;
+    }
+
+    .bottomPage {
+            
+        background: darkgrey;
+        overflow: auto;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 1px;
+        width: 414px;
+        font-size: smaller;
+        opacity: 1;
+        text-align: center;
+        clear: both;
+        height: 105px;
+        border-top: rgb(74, 170, 165) solid 5px;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .topPage {
+
+        background-color: white;
+        overflow: auto;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 5px solid rgb(74, 170, 165);
+        height: 124px;
+        width: 414px;
+}
+
+    h1 {    
+        text-align: center;
+        font-size: 4vh;
+        background-color: rgb(74, 170, 165);
+        width: 225px;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        bottom: 0px;
+        left: 95px;
+        color: white;
+        height: 92px;
+        margin: 0;
+        padding-top: 13px;
+    }
+    
+    #aboutHeader {
+
+        background-color: white;
+        padding-bottom: 0px;
+        border-bottom: 2px solid lightgrey;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        float: left;
+        box-sizing: border-box;
+        clear: right;
+        width: 392px;
+        font-size: 20px;
+        color: rgb(74, 170, 165);
+    }
+
+    .bioPhotoAndText {
+        line-height: 12px;
+        padding: 34px;
+        position: relative;
+        float: left;
+        /* overflow: overlay; */
+        top: -49px;
+        left: -11px;
+        letter-spacing: 1px;
+        width: 408px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 414px) {
+
+    .wrapper {
+
+        width: 768px;
+        position: relative;
+        margin: auto;
+        height: 833px;
+        box-sizing: border-box;
+    }
+    .aboutMeBox {
+
+        background-color: white;
+        padding-bottom: 0px;
+        border: solid lightgrey thin;
+        position: relative;
+        top: 109px;
+        left: -1px;
+        margin: auto;
+        width: 768px;
+        height: fit-content;
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 12px;
+
+    }
+
+    .links {
+
+        float: left;
+        position: relative;
+        bottom: -97px;
+        right: -207px;
+        font-size: smaller;
+    }
+
+    .bottomPage {
+            
+        background: darkgrey;
+        overflow: auto;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 1px;
+        width: 768px;
+        font-size: smaller;
+        opacity: 1;
+        text-align: center;
+        clear: both;
+        height: 105px;
+        border-top: rgb(74, 170, 165) solid 5px;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .topPage {
+
+        background-color: white;
+        overflow: auto;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 5px solid rgb(74, 170, 165);
+        height: 124px;
+        width: 768px;
+}
+
+    h1 {    
+        text-align: center;
+        font-size: 4vh;
+        background-color: rgb(74, 170, 165);
+        width: 225px;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        bottom: 0px;
+        left: 95px;
+        color: white;
+        height: 120px;
+        margin: 0;
+        padding-top: 13px;
+    }
+    
+    #aboutHeader {
+
+        background-color: white;
+        padding-bottom: 0px;
+        border-bottom: 2px solid lightgrey;
+        position: relative;
+        top: 0px;
+        left: 87px;
+        float: left;
+        box-sizing: border-box;
+        clear: right;
+        width: 392px;
+        font-size: 20px;
+        color: rgb(74, 170, 165);
+    }
+
+    
+    }

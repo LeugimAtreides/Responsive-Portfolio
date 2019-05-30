@@ -1,0 +1,69 @@
+<!-- first I've specified the type of documentt this is which is html -->
+<!DOCTYPE html>
+<html>
+
+<!-- I've specified that the html will be written in US english -->
+<html lang="en-us">
+
+<!-- in the "head" reference I've specified that I will be using the character set UTF-8,
+I've set the viewport which will scale the page to the width of the device viewing it,
+I've identified myself as the author for meta descriptors and I've linked the css stylesheet I'll be using. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="Miguel Villarreal">
+    <link rel="stylesheet" type="text/CSS" href="./assets/css/style.css">
+    <title>Miguel Villarreal Contact</title>
+</head>
+
+<!-- In the body tag I've created the divisions that will make up the webpage. The first division should contain my name as the header in its box, and the links as their own boxes -->
+
+<body>
+    <div class="topPage">
+        <section>
+            <header>
+                <h1>Miguel Villarreal</h1>
+            </header>
+
+            <section class="links">
+                <a href="index.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Me</a>
+            </section>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <div class="aboutMeBox">
+            <section id="aboutHeader">
+                <h2>Contact Me</h2>
+            </section>
+<!-- I decided to use the form idea from w3 schools due to the CSS styling from its forms page -->
+            <section class="bioParagraph">
+                <form>
+                    Name: <br>
+                    <input type="text" name="firstname">
+                    <br>
+                    Email: <br>
+                    <input type="text" name="emailaddress">
+                    Message: <br>
+                    <input type="textarea" name="Message">
+                    <br>
+                    <input type="submit" name="Submit">
+                </form>
+
+            </section>
+
+        </div>
+    </div>
+
+    <!-- the header, and the footer will be the same among all three pages -->
+    <div class="bottomPage">
+        <footer>
+            Copyright 2019, design and development by M.E. Villarreal
+        </footer>
+    </div>
+</body>
+
+</html>
